@@ -1,0 +1,317 @@
+/* Importando Fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;500&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ECF0F1;
+    color: #2C3E50;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2C3E50;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #F39C12;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-link {
+    color: #ECF0F1;
+    margin-left: 1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #F39C12;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-link:hover {
+    color: #F39C12;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active-nav {
+    color: #F39C12 !important;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('hero-background.jpg') center/cover no-repeat;
+    color: #ECF0F1;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.hero .display-4 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero .lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background-color: #F39C12;
+    color: #ECF0F1;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #D35400;
+    color: #fff;
+}
+
+/* Features Section */
+.features {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+.feature-box {
+    background-color: #ECF0F1;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    background-color: #F39C12;
+    color: #fff;
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Books Section */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2C3E50;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #7F8C8D;
+}
+
+.card-text strong {
+    color: #2C3E50;
+}
+
+.card-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #E74C3C;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+.about-us .lead {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #7F8C8D;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+.contact-form {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+.contact-form h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #2C3E50;
+}
+
+.contact-form .form-control {
+    border: 2px solid #BDC3C7;
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.contact-form .form-control:focus {
+    border-color: #F39C12;
+    box-shadow: none;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #F39C12;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #D35400;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Scroll to Top Button */
+#scrollToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #F39C12;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+#scrollToTop:hover {
+    background-color: #D35400;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+    .hero {
+        padding: 7rem 0;
+    }
+
+    .hero .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .hero .lead {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .feature-box {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 5rem 0;
+    }
+
+    .hero .display-4 {
+        font-size: 2rem;
+    }
+
+    .hero .lead {
+        font-size: 1rem;
+    }
+}
